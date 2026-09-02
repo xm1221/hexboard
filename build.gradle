@@ -29,13 +29,19 @@ subprojects {
         // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
         // See https://docs.gradle.org/current/userguide/declaring_repositories.html
         // for more information about repositories.
+        maven { url = "https://maven.aliyun.com/repository/gradle-plugin" }
+        maven { url ="https://maven.aliyun.com/repository/public"}
+        maven{ url ="https://mvnrepository.com/artifact/" }
+        maven{ url ="https://mirrors.qlu.edu.cn/bmclapi" }
+        maven{url ="https://mirror.sjtu.edu.cn/"}
+        maven{url = "https://central.sonatype.com/artifact/"}
         maven {
             name = "Modrinth"
             url = "https://api.modrinth.com/maven"
         }
         mavenCentral()
         maven {
-            url "https://maven.blamejared.com"
+            url="https://maven.blamejared.com"
         }
         maven {
             name = 'Kotlin for Forge'

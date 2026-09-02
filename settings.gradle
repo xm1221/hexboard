@@ -1,8 +1,16 @@
 pluginManagement {
     repositories {
-        maven { url "https://maven.fabricmc.net/" }
-        maven { url "https://maven.architectury.dev/" }
-        maven { url "https://files.minecraftforge.net/maven/" }
+        maven { url = "https://maven.aliyun.com/repository/gradle-plugin" }
+        maven { url ="https://maven.aliyun.com/repository/public"}
+        maven{ url ="https://mvnrepository.com/artifact/" }
+        maven{ url ="https://mirrors.qlu.edu.cn/bmclapi" }
+        maven{url ="https://mirror.sjtu.edu.cn/"}
+        maven{url = "https://central.sonatype.com/artifact/"}
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url ="https://maven.fabricmc.net/" }
+        maven { url ="https://maven.architectury.dev/" }
+        maven { url ="https://files.minecraftforge.net/maven/" }
         gradlePluginPortal()
     }
 }

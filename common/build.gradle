@@ -1,13 +1,24 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.9.22'
+    id 'org.jetbrains.kotlin.jvm' version '2.2.21'
 }
 repositories {
-    maven {
-        url "https://maven.blamejared.com"
-    }
+    maven { url = "https://maven.aliyun.com/repository/gradle-plugin" }
+    maven { url ="https://maven.aliyun.com/repository/public"}
+    maven{ url ="https://mvnrepository.com/artifact/" }
+    maven{ url ="https://mirrors.qlu.edu.cn/bmclapi" }
+    maven{url ="https://mirror.sjtu.edu.cn/"}
+    maven{url = "https://central.sonatype.com/artifact/"}
     maven {
         name = "Modrinth"
         url = "https://api.modrinth.com/maven"
+    }
+    mavenCentral()
+    maven {
+        url="https://maven.blamejared.com"
+    }
+    maven {
+        name = 'Kotlin for Forge'
+        url = 'https://thedarkcolour.github.io/KotlinForForge/'
     }
     mavenCentral()
 }
